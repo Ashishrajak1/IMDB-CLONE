@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="Navbar">
       <div className="Navbar_content">
-        <NavLink to="/">
+        <NavLink to="/imdb-clone">
           <div className="navbar_home">
             <img
               src="https://m.media-amazon.com/images/G/01/IMDb/BG_rectangle._CB1509060989_SY230_SX307_AL_.png"

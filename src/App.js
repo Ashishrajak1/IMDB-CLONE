@@ -12,7 +12,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/imdb-clone" element={<Home />} />
           <Route path="/moviedetail/:id" element={<MovieDetail />} />
           <Route path="/movies/:type" element={<MovieList />} />
         </Routes>

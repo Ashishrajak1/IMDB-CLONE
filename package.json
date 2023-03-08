@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Ashishrajak1.github.io",
   "name": "imdb-clone",
   "version": "0.1.0",
+  "homepage": "https://Ashishrajak1.github.io/imdb-clone/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
