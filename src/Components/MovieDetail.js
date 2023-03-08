@@ -5,7 +5,6 @@ import "./MovieDetail.css";
 function MovieDetail() {
   const [MovieDetail, SetMovieDetail] = useState([]);
   const { id } = useParams();
-  console.log(MovieDetail);
 
   useEffect(() => {
     Getdata();
