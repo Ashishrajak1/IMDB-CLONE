@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.md_movie_card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #a9a8a3;
+  background-color: rgb(134, 134, 201);
+  height: 110vh;
+  margin: 100px;
+  border-radius: 6px;
+}
+
+.md_cover {
+  position: absolute;
+  bottom: -3rem;
+  margin-left: 4rem;
+  z-index: 2;
+}
+
+.md_hero {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: 0 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.md_hero:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: silver;
+  z-index: -1;
+  transform: skewY(-2.2deg);
+  transform-origin: 0 0;
+}
+
+.details {
+  padding: 270px 0 0 280px;
+}
+.title1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.title2 {
+  color: #c7c1ba;
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.likes {
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+.likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+.lik {
+  margin-left: 1rem;
+  font-size: 15px;
+}
+
+.lik > .fa-star::after {
+  content: "";
+  padding-right: 7px;
+}
+.md_description {
+  height: 200px;
+  font-size: 1.02rem;
+  line-height: 26px;
+  color: #f1f1f1;
+}
+
+.column1 {
+  padding-left: 3rem;
+  padding-top: 6.5rem;
+  width: 220px;
+  float: left;
+  text-align: center;
+  color: #a9a8a3;
+}
+
+.tag {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 0.6rem;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column2 {
+  padding-right: 3.5rem;
+  float: right;
+  width: 60.2%;
+  text-align: start;
+}
+
+.avatars {
+  margin-top: 23px;
+}
+.avatars > .a_avatar {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .md_movie_card {
+    height: 50%;
+    margin: 20px;
+  }
+  .md_cover {
+    top: 9rem;
+    margin-left: 0.7rem;
+  }
+  .md_cover > img {
+    height: 150px;
+  }
+  .md_hero {
+    height: 180px;
+  }
+  .details {
+    padding: 70px 0 0 110px;
+    line-height: 1rem;
+  }
+  .column2 {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    letter-spacing: 0.8px;
+    padding-right: 0.5rem;
+
+    width: 60%;
+  }
+
+  .avatars {
+    margin-top: 5px;
+  }
+  .avatars > .a_avatar {
+    margin-right: 0.4rem;
+  }
+  .a_avatar > img {
+    height: 18px;
+  }
+  .md_hero:before {
+    height: 36%;
+  }
+
+  .title1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .title2 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    line-height: 0.8rem;
+  }
+
+  .likes {
+    margin-left: 0px;
+    font-size: 0.8rem;
+  }
+
+  .lik {
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .column1 {
+    padding-left: 0.6rem;
+    padding-top: 4rem;
+    width: 100px;
+  }
+
+  .tag {
+    border-radius: 8px;
+    padding: 2.4px 6.4px;
+    font-size: 6px;
+    margin-right: 0.2rem;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .md_movie_card {
+    height: 100vh;
+    margin: 120px;
+  }
+  .md_hero {
+    height: 600px;
+  }
+  .md_cover {
+    bottom: 4rem;
+    margin-left: 4rem;
+  }
+  .md_cover > img {
+    height: 400px;
+  }
+  .details {
+    padding: 250px 0 0 710px;
+    line-height: 1.7rem;
+  }
+  .title1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+
+  .title2 {
+    color: #c7c1ba;
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .likes {
+    font-size: 1.5rem;
+  }
+
+  .lik {
+    font-size: 1.5rem;
+  }
+  .md_description {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+  .column1 {
+    padding-top: 10rem;
+  }
+
+  .tag {
+    font-size: 1.4rem;
+    margin-right: 0.6rem;
+    line-height: 3.5rem;
+  }
+
+  .avatars {
+    margin-top: 3rem;
+  }
+  .avatars > .a_avatar {
+    margin-right: 3rem;
+  }
+  .a_avatar img {
+    height: 80px;
+  }
+}

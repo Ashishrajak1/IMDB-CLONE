@@ -1,0 +1,41 @@
+.Navbar {
+  line-height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.navbar_home img {
+  width: 100%;
+  height: 30px;
+  aspect-ratio: 2/1;
+  object-fit: contain;
+  margin-top: 10px;
+  display: block;
+}
+.Navbar_content {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.Navbar_content > a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 756px) {
+  .Navbar {
+    line-height: 40px;
+    padding-left: 0.4rem;
+  }
+  .navbar_home img {
+    height: 20px;
+  }
+  .Navbar_content {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+}

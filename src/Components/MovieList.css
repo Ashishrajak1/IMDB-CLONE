@@ -1,0 +1,29 @@
+.movie_list {
+  padding: 0 2rem 2rem 2rem;
+}
+.list_title {
+  font-size: 1.7rem;
+  margin: 2.5rem;
+  text-align: start;
+  text-transform: capitalize;
+}
+.list_cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 765px) {
+  .movie_list {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .list_title {
+    font-size: 1rem;
+    margin: 1.3rem;
+  }
+  .list_cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
